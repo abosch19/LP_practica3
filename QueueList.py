@@ -44,7 +44,7 @@ class QueueList(LinkedList):
         :return: Agregar comentarios
         """
         if self.size > 0:
-            return self.head.getData()
+            return self.getHead()
         else:
             raise IndexError
 
@@ -60,4 +60,4 @@ class QueueList(LinkedList):
         Agregar comentarios
         :return: Agregar comentarios
         """
-        return self.size
+        return self.getSize()
